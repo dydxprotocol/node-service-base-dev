@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'no-only-tests'],
   extends: [
     'eslint:recommended',
     'airbnb-typescript/base',
@@ -42,6 +42,7 @@ module.exports = {
     '**/coverage/**/*.js',
   ],
   rules: {
+    'no-only-tests/no-only-tests': 'warn',
     'arrow-body-style': 'off',
     'class-methods-use-this': 'off',
     'consistent-return': 'off', // Annoying when return type is Promise<void>. Not as helpful for TypeScript anyway.
@@ -164,5 +165,6 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-var-requires': 'warn',
+    '@typescript-eslint/require-await': 'error',
   },
 };
