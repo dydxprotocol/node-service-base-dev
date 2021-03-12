@@ -22,7 +22,7 @@ type ModuleMock<M extends Module> = {
  *
  * See https://stackoverflow.com/questions/52177631/jest-timer-and-promise-dont-work-well-settimeout-and-async-function
  */
-export async function advancePromiseQueue(n: number = 1) {
+export async function advancePromiseQueue(n: number = 1): Promise<void> {
   for (let i = 0; i < n; i += 1) {
     await Promise.resolve();
   }
@@ -33,7 +33,7 @@ export async function advancePromiseQueue(n: number = 1) {
  */
 export function asMock<F extends Fn>(mock: F): FnMock<F>;
 export function asMock<M extends Module>(mock: M): ModuleMock<M>;
-export function asMock(mock: Fn | Module) {
+export function asMock(mock: Fn | Module): FnMock<Fn> | ModuleMock<Module> {
   if (typeof mock === 'function') {
     return mock as FnMock<typeof mock>;
   }
