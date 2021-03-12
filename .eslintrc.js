@@ -166,5 +166,6 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-var-requires': 'warn',
     '@typescript-eslint/require-await': 'error',
+    '@typescript-eslint/strict-boolean-expressions': 'error',
   },
 };
