@@ -101,6 +101,10 @@ module.exports = {
     'padded-blocks': 'off',
     'prefer-destructuring': 'off',
     'spaced-comment': ['error', 'always', { exceptions: ['/'] }],
+    '@typescript-eslint/explicit-function-return-type': [
+      'error',
+      { allowExpressions: true },
+    ],
     // Copied from eslint-config-airbnb-base and modified to handle TypeScript bugs:
     // https://github.com/typescript-eslint/typescript-eslint/issues/1824
     '@typescript-eslint/indent': ['error', 2, {
