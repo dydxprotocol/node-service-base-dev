@@ -17,7 +17,8 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "resolveJsonModule": true,
-    "strict": true
+    "strict": true,
+    "useUnknownInCatchVariables": false
   },
   "include": [
     "__tests__",
