@@ -12,5 +12,5 @@ module.exports = {
   resetMocks: true,
   setupFilesAfterEnv: ['./jest.setup.js'],
   testEnvironment: 'node',
-  testTimeout: 10000,
+  testTimeout: 30000,
 };
