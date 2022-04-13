@@ -26,7 +26,7 @@ git tag v${version}
 new_version="$((version + 1))"
 echo $new_version > './VERSION'
 git add VERSION
-git commit -m "Prep VERSION for next build v$new_version [ci skip]"
+git commit -m "Prep VERSION for next build v$new_version [ci skip]" --no-verify
 git push origin master
 git push --tags
 
