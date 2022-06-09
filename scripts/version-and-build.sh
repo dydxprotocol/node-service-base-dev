@@ -27,7 +27,13 @@ new_version="$((version + 1))"
 echo $new_version > './VERSION'
 git add VERSION
 git commit -m "Prep VERSION for next build v$new_version [ci skip]" --no-verify
-git push origin master
+
+if [ -n "$MAIN_BRANCH_NAME" ]; then
+  git push origin $MAIN_BRANCH_NAME
+else
+  git push origin master
+fi
+
 git push --tags
 
 # Build docker image
