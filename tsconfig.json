@@ -13,6 +13,7 @@
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "incremental": true,
     "inlineSourceMap": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
