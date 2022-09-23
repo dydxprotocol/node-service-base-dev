@@ -39,7 +39,7 @@ docker login -u $DOCKER_HUB_USERNAME -p $DOCKER_HUB_PASSWORD
 docker push dydxprotocol/$SERVICE_NAME:v$version
 
 # Push to ECR
-for region in us-east-1 ap-northeast-1
+for region in ap-northeast-1
 do
   aws ecr get-login-password --region $region \
     | docker login -u AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$region.amazonaws.com
