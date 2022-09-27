@@ -33,11 +33,6 @@ git push --tags
 # Build docker image
 docker build -t $SERVICE_NAME:v$version . --build-arg NPM_TOKEN=${NPM_TOKEN}
 
-# Push to DockerHub
-docker tag $SERVICE_NAME:v$version dydxprotocol/$SERVICE_NAME:v$version
-docker login -u $DOCKER_HUB_USERNAME -p $DOCKER_HUB_PASSWORD
-docker push dydxprotocol/$SERVICE_NAME
-
 # Push to ECR
 for region in us-east-1 ap-northeast-1
 do
