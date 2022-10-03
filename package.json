@@ -1,6 +1,6 @@
 {
   "name": "@dydxprotocol/node-service-base-dev",
-  "version": "0.2.11",
+  "version": "0.3.0",
   "description": "Shared development configuration and utilities for Node services",
   "main": "build/index.js",
   "scripts": {
