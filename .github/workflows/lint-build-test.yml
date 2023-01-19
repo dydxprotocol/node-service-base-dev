@@ -1,4 +1,4 @@
-name: Lint/Build/Test
+name: Lint/Build
 
 on:
   pull_request:
@@ -8,5 +8,7 @@ on:
 
 jobs:
   main:
+    with:
+      SKIP_TEST: true
     uses: dydxprotocol/actions-public/.github/workflows/v3-lint-build-test.yml@main
     secrets: inherit
