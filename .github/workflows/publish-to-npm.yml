@@ -8,7 +8,6 @@ on:
 jobs:
   main:
     uses: dydxprotocol/actions-public/.github/workflows/v3-publish-to-npm.yml@main
-    environment: master
     secrets: inherit
     permissions:
       contents: write
