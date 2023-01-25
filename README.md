@@ -1,5 +1,6 @@
 <p align='center'><img src='https://s3.amazonaws.com/dydx-assets/dydx_logo_black.svg' width='256' /></p>
 
+
 <div align='center'>
   <a href='https://circleci.com/gh/dydxprotocol/workflows/node-service-base-dev/tree/master'>
     <img src='https://img.shields.io/circleci/project/github/dydxprotocol/node-service-base-dev.svg?token=64a088c21d9a6c34195533470f55a71e81d456c8' alt='CircleCI Status' />
